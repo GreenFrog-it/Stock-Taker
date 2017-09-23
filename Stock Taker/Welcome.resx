@@ -117,14 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Accounts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Accounts.mdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ListedStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ListedStock.mdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SuppliesDatabase" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SuppliesDatabase.mdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TextBox1.Text" xml:space="preserve">
+    <value>
+Welcome to the Stock Taker User Form.
+Here you can choose from the three available forms &amp; 
+also find a link to the FAQ &amp; Help pages.
+
+This form was written and designed by {green_Frog}IT
+Copyright Christopher Willson 2017.
+
+This is Version Number 0.0.9.17a</value>
   </data>
 </root>

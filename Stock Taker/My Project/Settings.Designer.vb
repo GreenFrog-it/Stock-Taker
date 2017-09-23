@@ -57,10 +57,36 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Products.mdb")>  _
-        Public ReadOnly Property ProductsConnectionString() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Indie\Documents\Vis"& _ 
+            "ual Studio 2017\Projects\Stock Taker Databases\Accounts.mdf"";Integrated Security"& _ 
+            "=True;Connect Timeout=30")>  _
+        Public ReadOnly Property AccountsConnectionString() As String
             Get
-                Return CType(Me("ProductsConnectionString"),String)
+                Return CType(Me("AccountsConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Indie\Documents\Vis"& _ 
+            "ual Studio 2017\Projects\Stock Taker Databases\SuppliesDatabase.mdf"";Integrated "& _ 
+            "Security=True;Connect Timeout=30")>  _
+        Public ReadOnly Property SuppliesConnectionString() As String
+            Get
+                Return CType(Me("SuppliesConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""\\FILESERVER\share\Jen Wills"& _ 
+            "on Jewellery\Stock Taker Databases\ListedStock.mdf"";Integrated Security=True;Con"& _ 
+            "nect Timeout=30")>  _
+        Public ReadOnly Property ListedStockConnectionString() As String
+            Get
+                Return CType(Me("ListedStockConnectionString"),String)
             End Get
         End Property
     End Class
